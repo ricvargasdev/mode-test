@@ -1,0 +1,5 @@
+/*
+    This is just a dummy file for testing the CreateAccount component...
+
+    Tests are not covered in this home task.
+*/
