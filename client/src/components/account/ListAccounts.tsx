@@ -25,6 +25,7 @@ const AccountList: React.FC<Props> = () => {
 
   return (
     <>
+      <h1>Search Accounts by Number or Name</h1>
       <Form onSubmit={handleSubmit}>
         <Form.Group>
           <Form.Label>Account Number</Form.Label>

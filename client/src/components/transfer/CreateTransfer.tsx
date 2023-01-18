@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Form, FormControl, Alert } from 'react-bootstrap';
+import { Form, FormControl, Button } from 'react-bootstrap';
 import { createTransfer } from '../../services/TransferService';
 import { Transfer } from '../../models/Transfer';
 
@@ -43,6 +43,11 @@ const CreateTransfer: React.FC<Props> = (props) => {
     };
 
     return (
+        <>
+        <h1>
+            {type === 0 && 'New Debit Transfer'}
+            {type === 1 && 'New Credit Transfer'}
+        </h1>
         <Form onSubmit={handleSubmit}>
             {isSuccess && <div className="alert alert-success">Transfer successful</div>}
             {isError && <div className="alert alert-danger">{errorMessage}</div>}
@@ -65,9 +70,10 @@ const CreateTransfer: React.FC<Props> = (props) => {
                 />
             </Form.Group>
             <Form.Group>
-                <Form.Control type="submit" value="Submit" />
+              <Button type="submit">Create Transfer</Button>
             </Form.Group>
         </Form>
+        </>
     );
 }
 
