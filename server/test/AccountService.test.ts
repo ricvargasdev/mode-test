@@ -1,5 +1,5 @@
 /*
-    This is just a dummy file for testing AccountService...
+    This is just a dummy file for testing AccountService.
 
-    Tests are not covered in this home task.
+    Still need to implement tests here...
 */
